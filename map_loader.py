@@ -1,5 +1,6 @@
 import json
 import math
+import asyncio
 import pygame
 import pygame_widgets
 from pygame_widgets.button import Button
@@ -46,7 +47,7 @@ def make_static_maps_response(someval_, delta_, map_or_sat, users_pt_s=False):
     delta_ = str(delta_)
     map_params = {
         "ll": ",".join((str(someval_[0]), str(someval_[1]))),
-        "spn": ",".join([delta_, delta_]),
+        "spn": delta_,
         "l": map_or_sat
     }
     if users_pt_s:
@@ -55,6 +56,7 @@ def make_static_maps_response(someval_, delta_, map_or_sat, users_pt_s=False):
         if pt_s:
             map_params['pt'] = '~'.join((','.join(i) for i in pt_s))
     map_api_server = "http://static-maps.yandex.ru/1.x/"
+    print(map_params)
     response = requests.get(map_api_server, params=map_params)
     map_file = "map.jpg"
     with open(map_file, "wb") as file:
@@ -69,7 +71,7 @@ def blit_amg(map_fil):
 
 someval = [37.617698, 55.755864]
 pt_s = []
-delta = 0.2
+delta = '0.2,0.2'
 map_sat_hyb = 'map'
 map_file = make_static_maps_response(someval, delta, map_sat_hyb)
 pygame.init()
@@ -186,7 +188,8 @@ button_click = Button(screen, 550, 0, 50, 100, text='Очистить', onClick=
 blit_amg(map_file)
 
 
-if __name__ == '__main__':
+async def main():
+    global someval, delta, map_sat_hyb, map_file
     pygame.display.flip()
     running = True
     while running:
@@ -196,29 +199,29 @@ if __name__ == '__main__':
                 running = False
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_PAGEUP:
-                    if 0.2 <= delta:
-                        delta -= 0.05
+                    if 0.2 <= float(delta.split(',')[0]):
+                        delta = str(float(delta.split(',')[0]) - 0.05) + ',' + str(float(delta.split(',')[0]) - 0.05)
                         map_file = make_static_maps_response(someval, delta, map_sat_hyb)
                         blit_amg(map_file)
                 if event.key == pygame.K_PAGEDOWN:
-                    if delta <= 20:
-                        delta += 0.05
+                    if float(delta.split(',')[0]) <= 20:
+                        delta = str(float(delta.split(',')[0]) + 0.05) + ',' + str(float(delta.split(',')[0]) + 0.05)
                         map_file = make_static_maps_response(someval, delta, map_sat_hyb)
                         blit_amg(map_file)
                 if event.key == pygame.K_UP:
-                    someval[1] += delta * 2
+                    someval[1] += float(delta.split(',')[0]) * 2
                     map_file = make_static_maps_response(someval, delta, map_sat_hyb)
                     blit_amg(map_file)
                 if event.key == pygame.K_DOWN:
-                    someval[1] -= delta * 2
+                    someval[1] -= float(delta.split(',')[0]) * 2
                     map_file = make_static_maps_response(someval, delta, map_sat_hyb)
                     blit_amg(map_file)
                 if event.key == pygame.K_LEFT:
-                    someval[0] -= delta * 2
+                    someval[0] -= float(delta.split(',')[0]) * 2
                     map_file = make_static_maps_response(someval, delta, map_sat_hyb)
                     blit_amg(map_file)
                 if event.key == pygame.K_RIGHT:
-                    someval[0] += delta * 2
+                    someval[0] += float(delta.split(',')[0]) * 2
                     map_file = make_static_maps_response(someval, delta, map_sat_hyb)
                     blit_amg(map_file)
                 if event.key == pygame.K_F1:
@@ -236,4 +239,8 @@ if __name__ == '__main__':
         except pygame.error as undef_err:
             print(undef_err.__str__())
         pygame.display.flip()
+        await asyncio.sleep(0)
     pygame.quit()
+
+if __name__ == '__main__':
+    asyncio.run(main())
