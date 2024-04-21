@@ -54,7 +54,7 @@ async def start(update, context):
 
 
 # Добавили словарь user_data в параметры.
-async def first_response(update, context):
+async def first_3response(update, context):
     # Сохраняем ответ в словаре.
     context.user_data['locality'] = update.message.text
     await update.message.reply_text(
