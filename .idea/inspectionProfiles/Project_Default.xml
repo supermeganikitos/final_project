@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="PIL.ImageFilter.FLIP_LEFT_RIGHT" />
+          <option value="PIL.ImageFilter.ROTATE_270" />
+          <option value="PIL.ImageFilter.ROTATE_90" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
