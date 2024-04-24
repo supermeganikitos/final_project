@@ -1,6 +1,6 @@
 import json
 import logging
-from random import randrange
+from random import randrange, choice
 import aiohttp
 from telegram import ReplyKeyboardMarkup, KeyboardButton
 from datetime import timedelta
@@ -16,6 +16,13 @@ t_i_m_e_r = 5  # таймер на 5 секунд
 with open('sities.json') as f2:
     sities = json.load(f2)
 all_btn = [KeyboardButton(text=i) for i in sities] # 5 рандомных элеиентов
+
+
+def random_elem():
+    a = []
+    for i in range(5):
+        ch = choice(all_btn)
+        a.append(ch)
 
 
 def get_random_sity():
