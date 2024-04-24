@@ -1,6 +1,6 @@
 import json
 import logging
-from random import randrange, choice
+from random import randrange, sample, shuffle
 import aiohttp
 from telegram import ReplyKeyboardMarkup, KeyboardButton
 from datetime import timedelta
@@ -12,17 +12,17 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG
 )
 logger = logging.getLogger(__name__)
-t_i_m_e_r = 5  # таймер на 5 секунд
+t_i_m_e_r = 60  # таймер на 5 секунд
 with open('sities.json') as f2:
     sities = json.load(f2)
 all_btn = [KeyboardButton(text=i) for i in sities] # 5 рандомных элеиентов
+flag = False
+country = None
 
 
 def random_elem():
-    a = []
-    for i in range(5):
-        ch = choice(all_btn)
-        a.append(ch)
+    a = sample(all_btn, 5)
+    return a
 
 
 def get_random_sity():
@@ -70,8 +70,11 @@ async def sity_photo():
 
 
 async def guess_the_sity(update, context):
+    flag = False
     sity__photo = sity_photo()
-    reply_keyboard = [*[[]]['/help'], ['/i_dont_know'], ['/timer_5m'], ['/nazad']]
+    a = [[i] for i in random_elem() + [get_sity(sity__photo[1])]]
+    shuffle(a)
+    reply_keyboard = [a, ['/help'], ['/i_dont_know'], ['/nazad']]
     markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     await context.bot.send_photo(
         update.message.chat_id,  # Идентификатор чата. Куда посылать картинку.
@@ -80,6 +83,11 @@ async def guess_the_sity(update, context):
         sity__photo[0],
         caption=f'у вас есть 1 минуты чтобы угадать город'
     )
+
+    await set_timer()
+    ans = str(update.message.text).lower()
+    if ans == sity__photo[1].lower():
+        flag = True
 
 
 async def show_sity(update, context):
@@ -112,7 +120,11 @@ async def timer_lobby(update, context):
 async def task(context):
     global t_i_m_e_r
     """Выводит сообщение"""
-    await context.bot.send_message(context.job.chat_id, text=f'КУКУ! {t_i_m_e_r}c. прошли!')
+    if flag:
+        text = 'Вы угадали'
+    else:
+        text = 'Вы  не угадали'
+    await context.bot.send_message(context.job.chat_id, text=text)
 
 
 async def unset(update, context):
@@ -136,28 +148,20 @@ def remove_job_if_exists(name, context):
 
 
 # Обычный обработчик, как и те, которыми мы пользовались раньше.
-async def set_timer(update, context, check_chat=True, t_i_m_e_r_=t_i_m_e_r):
-
+async def set_timer(update, context):
     global t_i_m_e_r
-    t_i_m_e_r = t_i_m_e_r_
     """Добавляем задачу в очередь"""
     chat_id = update.effective_message.chat_id
     # Добавляем задачу в очередь
     # и останавливаем предыдущую (если она была)
     job_removed = remove_job_if_exists(str(chat_id), context)
-    if check_chat:
-        locality = str(update.message.text).strip().split()[-1]
-        if locality.isdigit():
-            t_i_m_e_r_ = int(locality)
-    text = f'Вернусь через {t_i_m_e_r_} с.!'
-    if job_removed:
-        text += ' Старая задача удалена.'
+    text = f'{t_i_m_e_r} секунд пошло!'
     await update.effective_message.reply_text(text)
     context.job_queue.run_once(task,
-                               when=timedelta(seconds=t_i_m_e_r_),
+                               when=timedelta(seconds=t_i_m_e_r),
                                chat_id=chat_id,
                                name=str(chat_id),
-                               data=t_i_m_e_r_)
+                               data=t_i_m_e_r)
 
 
 async def start(update, context):
