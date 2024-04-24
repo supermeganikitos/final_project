@@ -70,8 +70,10 @@ async def sity_photo():
 
 
 async def guess_the_sity(update, context):
+    global flag, country
     flag = False
     sity__photo = sity_photo()
+    country = sity__photo[1][1]
     a = [[i] for i in random_elem() + [get_sity(sity__photo[1])]]
     shuffle(a)
     reply_keyboard = [a, ['/help'], ['/i_dont_know'], ['/nazad']]
