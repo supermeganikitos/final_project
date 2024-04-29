@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <p class="fs-2 text-center">Оформление каюты</p>
+        <div class="container text-center">
+            <div class="row">
+                <p class="fw-bold">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+
+                {% if age >= 21 and gender == 'male' %}
+                    <p>
+                        <img src="/static/img/old_male.png" class="img-fluid" alt="..." width="267" height="189">
+                        <img src="/static/img/old.png" class="img-fluid" alt="...">
+                    </p>
+                {% elif age >= 21 and gender == 'female'%}
+                    <p>
+                        <img src="/static/img/old_female.png" class="img-fluid" alt="..." width="267" height="189">
+                        <img src="/static/img/old.png" class="img-fluid" alt="...">
+                    </p>
+                {% elif age < 21 and gender == 'female'%}
+                    <p>
+                        <img src="/static/img/young_female.png" class="img-fluid" alt="..." width="267" height="189">
+                        <img src="/static/img/young.png" class="img-fluid" alt="...">
+                    </p>
+                {% elif age < 21 and gender == 'male'%}
+                    <p>
+                        <img src="/static/img/young_male.png" class="img-fluid" alt="..." width="267" height="189">
+                        <img src="/static/img/young.png" class="img-fluid" alt="...">
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+{% endblock %}
