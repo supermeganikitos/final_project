@@ -4,6 +4,7 @@ from random import randrange, sample, shuffle
 import aiohttp
 from telegram import ReplyKeyboardMarkup, KeyboardButton
 from datetime import timedelta
+import sqlite3
 
 
 BOT_TOKEN = '6900636091:AAF6Gdu8YEuGQrUNLjqWQ8S_EvkF-zfFoJM'
@@ -19,6 +20,53 @@ all_btn = [KeyboardButton(text=i) for i in sities] # 5 рандомных эле
 flag = False
 corr_ans = None
 country = None
+
+
+async def work_with_bd(update, context, type):
+    con = sqlite3.connect("films_db.sqlite")
+    cur = con.cursor()
+    first_name = update.chat.first_name
+    last_name = update.chat.last_name
+    username = update.chat.username
+    query = f'''SELECT * FROM
+    users
+    WHERE first_name = '{first_name}' AND
+    last_name = '{last_name}' AND
+    username = '{username}'
+    '''
+    result = cur.execute(query).fetchall()
+    if not result:
+        query = f'''INSERT INTO users
+            values ('{first_name}', '{last_name}', '{username}', 0, 0)'''
+        result = cur.execute(query).fetchall()
+    if type == 1:
+        query = f'''SELECT saw FROM
+            users
+            WHERE first_name = '{first_name}' AND
+            last_name = '{last_name}' AND
+            username = '{username}'
+            '''
+        s = cur.execute(query).fetchone()[0]
+        query = f'''UPDATE
+            SET saw = {s + 1} 
+            WHERE first_name = '{first_name}' AND
+            last_name = '{last_name}' AND
+            username = '{username}'
+            '''
+    elif type == 2:
+        query = f'''SELECT guessed FROM
+                    users
+                    WHERE first_name = '{first_name}' AND
+                    last_name = '{last_name}' AND
+                    username = '{username}'
+                    '''
+        g = cur.execute(query).fetchone()[0]
+        query = f'''UPDATE
+                    SET guessed = {g + 1} 
+                    WHERE first_name = '{first_name}' AND
+                    last_name = '{last_name}' AND
+                    username = '{username}'
+                    '''
 
 
 async def corr_ans_func(update, context):

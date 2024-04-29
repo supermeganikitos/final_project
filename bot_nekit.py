@@ -1,6 +1,5 @@
 from telegram.ext import Application, MessageHandler, filters
 from telegram.ext import CommandHandler
-from yandex_func_bot import *
 from project_func_bot import *
 
 
