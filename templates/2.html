@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <ul>
+        {% for key in d %}
+            <li><h3>{% if loop.last %} {{ key }} {{ d[key] }} {% else %} {{ key }}: {{ d[key] }} {% endif %}</h3></li>
+            <br>
+        {% endfor %}
+        </ul>
+{% endblock %}

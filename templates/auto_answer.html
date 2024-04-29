@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.surname.label }}<br>
+        {{ form.surname(class="form-control") }}<br>
+        {% for error in form.surname.errors %}
+            <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name(class="form-control") }}<br>
+        {% for error in form.name.errors %}
+            <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.education.label }}<br>
+        {{ form.education(class="form-control") }}<br>
+        {% for error in form.education.errors %}
+            <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.profession.label }}<br>
+        {{ form.profession(class="form-control") }}<br>
+        {% for error in form.profession.errors %}
+            <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.sex.label }}<br>
+        {{ form.sex(class="form-control") }}<br>
+        {% for error in form.sex.errors %}
+            <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.motivation.label }}<br>
+        {{ form.motivation(class="form-control") }}<br>
+        {% for error in form.motivation.errors %}
+            <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.ready.label }}<br>
+        {{ form.ready(class="form-control") }}<br>
+        {% for error in form.ready.errors %}
+            <div class="alert alert-danger" role="alert">{{ error }}</div>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+</form>
+{% endblock %}
