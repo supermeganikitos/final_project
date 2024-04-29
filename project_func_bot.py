@@ -23,50 +23,57 @@ country = None
 
 
 async def work_with_bd(update, context, type):
-    con = sqlite3.connect("films_db.sqlite")
+    con = sqlite3.connect(r"""C:\Users\sstus\PycharmProjects\final_project\site_db\db\blogs.db""")
     cur = con.cursor()
-    first_name = update.chat.first_name
-    last_name = update.chat.last_name
-    username = update.chat.username
+    first_name = update.message.chat.first_name
+    last_name = update.message.chat.last_name
+    username = update.message.chat.username
     query = f'''SELECT * FROM
     users
     WHERE first_name = '{first_name}' AND
     last_name = '{last_name}' AND
-    username = '{username}'
+    username = '{username}';
     '''
+    q = "SELECT MAX(id) FROM users;"
+    res1 = cur.execute(q).fetchone()
     result = cur.execute(query).fetchall()
     if not result:
         query = f'''INSERT INTO users
-            values ('{first_name}', '{last_name}', '{username}', 0, 0)'''
+            values ('{res1[0] + 1}', '{first_name}', '{last_name}', '{username}', '0', '0');'''
         result = cur.execute(query).fetchall()
+        con.commit()
     if type == 1:
         query = f'''SELECT saw FROM
             users
             WHERE first_name = '{first_name}' AND
             last_name = '{last_name}' AND
-            username = '{username}'
+            username = '{username}';
             '''
-        s = cur.execute(query).fetchone()[0]
-        query = f'''UPDATE
-            SET saw = {s + 1} 
+        s = cur.execute(query).fetchone()[0] + 1
+        query = f'''UPDATE users
+            SET saw = '{s}'
             WHERE first_name = '{first_name}' AND
             last_name = '{last_name}' AND
-            username = '{username}'
+            username = '{username}';
             '''
+        cur.execute(query)
     elif type == 2:
         query = f'''SELECT guessed FROM
                     users
                     WHERE first_name = '{first_name}' AND
                     last_name = '{last_name}' AND
-                    username = '{username}'
+                    username = '{username}';
                     '''
         g = cur.execute(query).fetchone()[0]
-        query = f'''UPDATE
-                    SET guessed = {g + 1} 
+        query = f'''UPDATE users
+                    SET guessed = '{g + 1}'
                     WHERE first_name = '{first_name}' AND
                     last_name = '{last_name}' AND
-                    username = '{username}'
+                    username = '{username}';
                     '''
+        cur.execute(query)
+    con.commit()
+    con.close()
 
 
 async def corr_ans_func(update, context):
@@ -75,10 +82,11 @@ async def corr_ans_func(update, context):
         flag = True
         chat_id = update.message.chat_id
         remove_job_if_exists(str(chat_id), context)
-        text='Вы выиграли'
+        text = 'Вы выиграли'
+        await work_with_bd(update, context, 2)
     else:
         flag = False
-        text='Вы проиграли'
+        text = 'Вы проиграли'
     await update.message.reply_text(text)
     await start(update, context)
 
@@ -173,6 +181,7 @@ async def show_sity(update, context):
         sity__photo[0],
         caption=f"Нашёл:{sity__photo[1]}"
     )
+    await work_with_bd(update, context, 1)
 
 
 async def get_response(url, params):
