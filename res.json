@@ -3,7 +3,7 @@
         "GeoObjectCollection": {
             "metaDataProperty": {
                 "GeocoderResponseMetaData": {
-                    "request": "\u041c\u0430\u0441\u043a\u0430\u0442",
+                    "request": "\u041a\u0430\u043d\u043e",
                     "results": "10",
                     "found": "10"
                 }
@@ -14,246 +14,52 @@
                         "metaDataProperty": {
                             "GeocoderMetaData": {
                                 "precision": "other",
-                                "text": "\u041e\u043c\u0430\u043d, \u041c\u0430\u0441\u043a\u0430\u0442",
+                                "text": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e, \u0433\u043e\u0440\u043e\u0434 \u041a\u0430\u043d\u043e",
                                 "kind": "locality",
                                 "Address": {
-                                    "country_code": "OM",
-                                    "formatted": "\u041e\u043c\u0430\u043d, \u041c\u0430\u0441\u043a\u0430\u0442",
+                                    "country_code": "NG",
+                                    "formatted": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e, \u0433\u043e\u0440\u043e\u0434 \u041a\u0430\u043d\u043e",
                                     "Components": [
                                         {
                                             "kind": "country",
-                                            "name": "\u041e\u043c\u0430\u043d"
+                                            "name": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f"
                                         },
                                         {
                                             "kind": "province",
-                                            "name": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        },
-                                        {
-                                            "kind": "area",
-                                            "name": "\u0645\u0633\u0642\u0637"
+                                            "name": "\u041a\u0430\u043d\u043e"
                                         },
                                         {
                                             "kind": "locality",
-                                            "name": "\u041c\u0430\u0441\u043a\u0430\u0442"
+                                            "name": "\u0433\u043e\u0440\u043e\u0434 \u041a\u0430\u043d\u043e"
                                         }
                                     ]
                                 },
                                 "AddressDetails": {
                                     "Country": {
-                                        "AddressLine": "\u041e\u043c\u0430\u043d, \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "OM",
-                                        "CountryName": "\u041e\u043c\u0430\u043d",
+                                        "AddressLine": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e, \u0433\u043e\u0440\u043e\u0434 \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "NG",
+                                        "CountryName": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f",
                                         "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                            "SubAdministrativeArea": {
-                                                "SubAdministrativeAreaName": "\u0645\u0633\u0642\u0637",
-                                                "Locality": {
-                                                    "LocalityName": "\u041c\u0430\u0441\u043a\u0430\u0442"
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "name": "\u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u041e\u043c\u0430\u043d",
-                        "boundedBy": {
-                            "Envelope": {
-                                "lowerCorner": "58.572483 23.604326",
-                                "upperCorner": "58.60158 23.626509"
-                            }
-                        },
-                        "uri": "ymapsbm1://geo?data=CgoxNTUyNTk5NTA3Eh3YudmF2KfZhiwg2YXYr9mK2YbYqSDZhdiz2YLYtyIKDdFgakIVDOy8QQ,,",
-                        "Point": {
-                            "pos": "58.594546 23.615261"
-                        }
-                    }
-                },
-                {
-                    "GeoObject": {
-                        "metaDataProperty": {
-                            "GeocoderMetaData": {
-                                "precision": "other",
-                                "text": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u0627\u0644\u0633\u064a\u0628, \u0430\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                "kind": "airport",
-                                "Address": {
-                                    "country_code": "OM",
-                                    "formatted": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u0627\u0644\u0633\u064a\u0628, \u0430\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                    "Components": [
-                                        {
-                                            "kind": "country",
-                                            "name": "\u041e\u043c\u0430\u043d"
-                                        },
-                                        {
-                                            "kind": "province",
-                                            "name": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        },
-                                        {
-                                            "kind": "area",
-                                            "name": "\u0627\u0644\u0633\u064a\u0628"
-                                        },
-                                        {
-                                            "kind": "airport",
-                                            "name": "\u0430\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        }
-                                    ]
-                                },
-                                "AddressDetails": {
-                                    "Country": {
-                                        "AddressLine": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u0627\u0644\u0633\u064a\u0628, \u0430\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "OM",
-                                        "CountryName": "\u041e\u043c\u0430\u043d",
-                                        "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                            "SubAdministrativeArea": {
-                                                "SubAdministrativeAreaName": "\u0627\u0644\u0633\u064a\u0628",
-                                                "Locality": {
-                                                    "DependentLocality": {
-                                                        "DependentLocalityName": "\u0430\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "name": "\u0430\u044d\u0440\u043e\u043f\u043e\u0440\u0442 \u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u0627\u0644\u0633\u064a\u0628, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u041e\u043c\u0430\u043d",
-                        "boundedBy": {
-                            "Envelope": {
-                                "lowerCorner": "58.256061 23.587156",
-                                "upperCorner": "58.30739 23.610559"
-                            }
-                        },
-                        "uri": "ymapsbm1://geo?data=CgozMzE2NDAxMTM1EkvYudmF2KfZhiwg2YXYrdin2YHYuNipINmF2LPZgti3LCDYp9mE2LPZitioLCDZhdi32KfYsSDZhdiz2YLYtyDYp9mE2K_ZiNmE2YoiCg1bJ2lCFSPPvEE,",
-                        "Point": {
-                            "pos": "58.288436 23.601138"
-                        }
-                    }
-                },
-                {
-                    "GeoObject": {
-                        "metaDataProperty": {
-                            "GeocoderMetaData": {
-                                "precision": "other",
-                                "text": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u043e\u0441\u0442\u0440\u043e\u0432 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                "kind": "other",
-                                "Address": {
-                                    "country_code": "OM",
-                                    "formatted": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u043e\u0441\u0442\u0440\u043e\u0432 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                    "Components": [
-                                        {
-                                            "kind": "country",
-                                            "name": "\u041e\u043c\u0430\u043d"
-                                        },
-                                        {
-                                            "kind": "province",
-                                            "name": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        },
-                                        {
-                                            "kind": "other",
-                                            "name": "\u043e\u0441\u0442\u0440\u043e\u0432 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        }
-                                    ]
-                                },
-                                "AddressDetails": {
-                                    "Country": {
-                                        "AddressLine": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u043e\u0441\u0442\u0440\u043e\u0432 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "OM",
-                                        "CountryName": "\u041e\u043c\u0430\u043d",
-                                        "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
+                                            "AdministrativeAreaName": "\u041a\u0430\u043d\u043e",
                                             "Locality": {
-                                                "Premise": {
-                                                    "PremiseName": "\u043e\u0441\u0442\u0440\u043e\u0432 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                                }
+                                                "LocalityName": "\u0433\u043e\u0440\u043e\u0434 \u041a\u0430\u043d\u043e"
                                             }
                                         }
                                     }
                                 }
                             }
                         },
-                        "name": "\u043e\u0441\u0442\u0440\u043e\u0432 \u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u041e\u043c\u0430\u043d",
+                        "name": "\u0433\u043e\u0440\u043e\u0434 \u041a\u0430\u043d\u043e",
+                        "description": "\u041a\u0430\u043d\u043e, \u041d\u0438\u0433\u0435\u0440\u0438\u044f",
                         "boundedBy": {
                             "Envelope": {
-                                "lowerCorner": "58.594905 23.618389",
-                                "upperCorner": "58.601858 23.62814"
+                                "lowerCorner": "8.44764 11.904312",
+                                "upperCorner": "8.621536 12.078261"
                             }
                         },
-                        "uri": "ymapsbm1://geo?data=Cgo1MjQyMjQwMzY2EjrYudmF2KfZhiwg2YXYrdin2YHYuNipINmF2LPZgti3LCDQvtGB0YLRgNC-0LIg0JzQsNGB0LrQsNGCIgoNzmRqQhWQ_LxB",
+                        "uri": "ymapsbm1://geo?data=CgoxNTUyMDk3MzcxEhNOaWdlcmlhLCBLYW5vLCBLYW5vIgoNgooIQRVe3D9B",
                         "Point": {
-                            "pos": "58.598444 23.623323"
-                        }
-                    }
-                },
-                {
-                    "GeoObject": {
-                        "metaDataProperty": {
-                            "GeocoderMetaData": {
-                                "precision": "street",
-                                "text": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u0411\u043b\u0430\u0431\u0435\u0440\u0433\u0441\u0442\u0440\u0435\u043d\u0434, \u043f\u043e\u0434\u044a\u0435\u0437\u0434 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                "kind": "street",
-                                "Address": {
-                                    "country_code": "ZA",
-                                    "formatted": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u0411\u043b\u0430\u0431\u0435\u0440\u0433\u0441\u0442\u0440\u0435\u043d\u0434, \u043f\u043e\u0434\u044a\u0435\u0437\u0434 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                    "Components": [
-                                        {
-                                            "kind": "country",
-                                            "name": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430"
-                                        },
-                                        {
-                                            "kind": "province",
-                                            "name": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f"
-                                        },
-                                        {
-                                            "kind": "locality",
-                                            "name": "\u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d"
-                                        },
-                                        {
-                                            "kind": "district",
-                                            "name": "\u0411\u043b\u0430\u0431\u0435\u0440\u0433\u0441\u0442\u0440\u0435\u043d\u0434"
-                                        },
-                                        {
-                                            "kind": "street",
-                                            "name": "\u043f\u043e\u0434\u044a\u0435\u0437\u0434 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        }
-                                    ]
-                                },
-                                "AddressDetails": {
-                                    "Country": {
-                                        "AddressLine": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u0411\u043b\u0430\u0431\u0435\u0440\u0433\u0441\u0442\u0440\u0435\u043d\u0434, \u043f\u043e\u0434\u044a\u0435\u0437\u0434 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "ZA",
-                                        "CountryName": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
-                                        "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f",
-                                            "Locality": {
-                                                "LocalityName": "\u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d",
-                                                "DependentLocality": {
-                                                    "DependentLocalityName": "\u0411\u043b\u0430\u0431\u0435\u0440\u0433\u0441\u0442\u0440\u0435\u043d\u0434",
-                                                    "Thoroughfare": {
-                                                        "ThoroughfareName": "\u043f\u043e\u0434\u044a\u0435\u0437\u0434 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "name": "\u043f\u043e\u0434\u044a\u0435\u0437\u0434 \u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u0411\u043b\u0430\u0431\u0435\u0440\u0433\u0441\u0442\u0440\u0435\u043d\u0434, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
-                        "boundedBy": {
-                            "Envelope": {
-                                "lowerCorner": "18.506328 -33.825184",
-                                "upperCorner": "18.507038 -33.824936"
-                            }
-                        },
-                        "uri": "ymapsbm1://geo?data=CgozNDkxMTc4NDA5ElhSZXB1YmxpYyBvZiBTb3V0aCBBZnJpY2EsIFdlc3Rlcm4gQ2FwZSBQcm92aW5jZSwgQ2FwZSBUb3duLCBCbG91YmVyZ3N0cmFuZCwgTXVzY2F0IENsb3NlIgoNqw2UQRXiTAfC",
-                        "Point": {
-                            "pos": "18.506678 -33.825079"
+                            "pos": "8.533816 11.991305"
                         }
                     }
                 },
@@ -262,52 +68,88 @@
                         "metaDataProperty": {
                             "GeocoderMetaData": {
                                 "precision": "other",
-                                "text": "\u041f\u0430\u043a\u0438\u0441\u0442\u0430\u043d, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0425\u0430\u0439\u0431\u0435\u0440-\u041f\u0430\u0445\u0442\u0443\u043d\u0445\u0432\u0430, \u0440\u0430\u0439\u043e\u043d \u0425\u0430\u0439\u0431\u0435\u0440, \u0414\u0436\u0430\u043c\u0440\u0443\u0434-\u0422\u0435\u0437\u0438\u043b, \u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u0410\u043b\u0438-\u041c\u0430\u0441\u0434\u0436\u0438\u0434, \u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u041c\u0430\u0441\u043a\u0430\u0442",
+                                "text": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e",
+                                "kind": "province",
+                                "Address": {
+                                    "country_code": "NG",
+                                    "formatted": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "NG",
+                                        "CountryName": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "7.651697 10.563799",
+                                "upperCorner": "9.396899 12.595893"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoxOTU2MjI0NjAyEg1OaWdlcmlhLCBLYW5vIgoNZs0IQRUPQjtB",
+                        "Point": {
+                            "pos": "8.550147 11.70363"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u0421\u043e\u0435\u0434\u0438\u043d\u0451\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438, \u0448\u0442\u0430\u0442 \u0413\u0430\u0432\u0430\u0439\u0438, \u043e\u043a\u0440\u0443\u0433 \u0413\u043e\u043d\u043e\u043b\u0443\u043b\u0443, \u041a\u0430\u043d\u043e",
                                 "kind": "locality",
                                 "Address": {
-                                    "country_code": "PK",
-                                    "formatted": "\u041f\u0430\u043a\u0438\u0441\u0442\u0430\u043d, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0425\u0430\u0439\u0431\u0435\u0440-\u041f\u0430\u0445\u0442\u0443\u043d\u0445\u0432\u0430, \u0440\u0430\u0439\u043e\u043d \u0425\u0430\u0439\u0431\u0435\u0440, \u0414\u0436\u0430\u043c\u0440\u0443\u0434-\u0422\u0435\u0437\u0438\u043b, \u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u0410\u043b\u0438-\u041c\u0430\u0441\u0434\u0436\u0438\u0434, \u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u041c\u0430\u0441\u043a\u0430\u0442",
+                                    "country_code": "US",
+                                    "formatted": "\u0421\u043e\u0435\u0434\u0438\u043d\u0451\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438, \u0448\u0442\u0430\u0442 \u0413\u0430\u0432\u0430\u0439\u0438, \u043e\u043a\u0440\u0443\u0433 \u0413\u043e\u043d\u043e\u043b\u0443\u043b\u0443, \u041a\u0430\u043d\u043e",
                                     "Components": [
                                         {
                                             "kind": "country",
-                                            "name": "\u041f\u0430\u043a\u0438\u0441\u0442\u0430\u043d"
+                                            "name": "\u0421\u043e\u0435\u0434\u0438\u043d\u0451\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438"
                                         },
                                         {
                                             "kind": "province",
-                                            "name": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0425\u0430\u0439\u0431\u0435\u0440-\u041f\u0430\u0445\u0442\u0443\u043d\u0445\u0432\u0430"
+                                            "name": "\u0448\u0442\u0430\u0442 \u0413\u0430\u0432\u0430\u0439\u0438"
                                         },
                                         {
                                             "kind": "area",
-                                            "name": "\u0440\u0430\u0439\u043e\u043d \u0425\u0430\u0439\u0431\u0435\u0440"
-                                        },
-                                        {
-                                            "kind": "area",
-                                            "name": "\u0414\u0436\u0430\u043c\u0440\u0443\u0434-\u0422\u0435\u0437\u0438\u043b"
+                                            "name": "\u043e\u043a\u0440\u0443\u0433 \u0413\u043e\u043d\u043e\u043b\u0443\u043b\u0443"
                                         },
                                         {
                                             "kind": "locality",
-                                            "name": "\u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u0410\u043b\u0438-\u041c\u0430\u0441\u0434\u0436\u0438\u0434"
-                                        },
-                                        {
-                                            "kind": "locality",
-                                            "name": "\u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u041c\u0430\u0441\u043a\u0430\u0442"
+                                            "name": "\u041a\u0430\u043d\u043e"
                                         }
                                     ]
                                 },
                                 "AddressDetails": {
                                     "Country": {
-                                        "AddressLine": "\u041f\u0430\u043a\u0438\u0441\u0442\u0430\u043d, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0425\u0430\u0439\u0431\u0435\u0440-\u041f\u0430\u0445\u0442\u0443\u043d\u0445\u0432\u0430, \u0440\u0430\u0439\u043e\u043d \u0425\u0430\u0439\u0431\u0435\u0440, \u0414\u0436\u0430\u043c\u0440\u0443\u0434-\u0422\u0435\u0437\u0438\u043b, \u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u0410\u043b\u0438-\u041c\u0430\u0441\u0434\u0436\u0438\u0434, \u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "PK",
-                                        "CountryName": "\u041f\u0430\u043a\u0438\u0441\u0442\u0430\u043d",
+                                        "AddressLine": "\u0421\u043e\u0435\u0434\u0438\u043d\u0451\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438, \u0448\u0442\u0430\u0442 \u0413\u0430\u0432\u0430\u0439\u0438, \u043e\u043a\u0440\u0443\u0433 \u0413\u043e\u043d\u043e\u043b\u0443\u043b\u0443, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "US",
+                                        "CountryName": "\u0421\u043e\u0435\u0434\u0438\u043d\u0451\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438",
                                         "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0425\u0430\u0439\u0431\u0435\u0440-\u041f\u0430\u0445\u0442\u0443\u043d\u0445\u0432\u0430",
+                                            "AdministrativeAreaName": "\u0448\u0442\u0430\u0442 \u0413\u0430\u0432\u0430\u0439\u0438",
                                             "SubAdministrativeArea": {
-                                                "SubAdministrativeAreaName": "\u0440\u0430\u0439\u043e\u043d \u0425\u0430\u0439\u0431\u0435\u0440",
+                                                "SubAdministrativeAreaName": "\u043e\u043a\u0440\u0443\u0433 \u0413\u043e\u043d\u043e\u043b\u0443\u043b\u0443",
                                                 "Locality": {
-                                                    "LocalityName": "\u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u0410\u043b\u0438-\u041c\u0430\u0441\u0434\u0436\u0438\u0434",
-                                                    "DependentLocality": {
-                                                        "DependentLocalityName": "\u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u041c\u0430\u0441\u043a\u0430\u0442"
-                                                    }
+                                                    "LocalityName": "\u041a\u0430\u043d\u043e"
                                                 }
                                             }
                                         }
@@ -315,148 +157,17 @@
                                 }
                             }
                         },
-                        "name": "\u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u0412\u0438\u043b\u043b\u0438\u0434\u0436-\u043e\u0444-\u0410\u043b\u0438-\u041c\u0430\u0441\u0434\u0436\u0438\u0434, \u0414\u0436\u0430\u043c\u0440\u0443\u0434-\u0422\u0435\u0437\u0438\u043b, \u0440\u0430\u0439\u043e\u043d \u0425\u0430\u0439\u0431\u0435\u0440, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0425\u0430\u0439\u0431\u0435\u0440-\u041f\u0430\u0445\u0442\u0443\u043d\u0445\u0432\u0430, \u041f\u0430\u043a\u0438\u0441\u0442\u0430\u043d",
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u043e\u043a\u0440\u0443\u0433 \u0413\u043e\u043d\u043e\u043b\u0443\u043b\u0443, \u0448\u0442\u0430\u0442 \u0413\u0430\u0432\u0430\u0439\u0438, \u0421\u043e\u0435\u0434\u0438\u043d\u0451\u043d\u043d\u044b\u0435 \u0428\u0442\u0430\u0442\u044b \u0410\u043c\u0435\u0440\u0438\u043a\u0438",
                         "boundedBy": {
                             "Envelope": {
-                                "lowerCorner": "71.263864 34.027879",
-                                "upperCorner": "71.264717 34.028874"
+                                "lowerCorner": "-157.812292 21.412798",
+                                "upperCorner": "-157.794991 21.427299"
                             }
                         },
-                        "uri": "ymapsbm1://geo?data=Cgo1MTY2ODAzNjI2EnJQYWtpc3RhbiwgUHJvdmluY2Ugb2YgS2h5YmVyIFBha2h0dW5raHdhLCBLaHliZXIgRGlzdHJpY3QsIEphbXJ1ZCB0ZWhzaWwsIFZpbGxhZ2Ugb2YgQWxpIE1hc2ppZCwgVmlsbGFnZSBvZiBNYXNrYXQiCg1Sh45CFQkdCEI,",
+                        "uri": "ymapsbm1://geo?data=CgoyMjQwMDE2OTYzEkZVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIEhhd2FpaSwgQ2l0eSBhbmQgQ291bnR5IG9mIEhvbm9sdWx1LCBLYW5lb2hlIgoNuM0dwxVLWatB",
                         "Point": {
-                            "pos": "71.264295 34.028358"
-                        }
-                    }
-                },
-                {
-                    "GeoObject": {
-                        "metaDataProperty": {
-                            "GeocoderMetaData": {
-                                "precision": "street",
-                                "text": "\u0415\u0433\u0438\u043f\u0435\u0442, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041a\u0430\u0438\u0440, \u041a\u0432\u0435\u0441\u043c \u042d\u0448-\u0428\u043e\u0440\u0443\u043a, \u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                "kind": "street",
-                                "Address": {
-                                    "country_code": "EG",
-                                    "formatted": "\u0415\u0433\u0438\u043f\u0435\u0442, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041a\u0430\u0438\u0440, \u041a\u0432\u0435\u0441\u043c \u042d\u0448-\u0428\u043e\u0440\u0443\u043a, \u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                    "Components": [
-                                        {
-                                            "kind": "country",
-                                            "name": "\u0415\u0433\u0438\u043f\u0435\u0442"
-                                        },
-                                        {
-                                            "kind": "province",
-                                            "name": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041a\u0430\u0438\u0440"
-                                        },
-                                        {
-                                            "kind": "district",
-                                            "name": "\u041a\u0432\u0435\u0441\u043c \u042d\u0448-\u0428\u043e\u0440\u0443\u043a"
-                                        },
-                                        {
-                                            "kind": "street",
-                                            "name": "\u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        }
-                                    ]
-                                },
-                                "AddressDetails": {
-                                    "Country": {
-                                        "AddressLine": "\u0415\u0433\u0438\u043f\u0435\u0442, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041a\u0430\u0438\u0440, \u041a\u0432\u0435\u0441\u043c \u042d\u0448-\u0428\u043e\u0440\u0443\u043a, \u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "EG",
-                                        "CountryName": "\u0415\u0433\u0438\u043f\u0435\u0442",
-                                        "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041a\u0430\u0438\u0440",
-                                            "Locality": {
-                                                "DependentLocality": {
-                                                    "DependentLocalityName": "\u041a\u0432\u0435\u0441\u043c \u042d\u0448-\u0428\u043e\u0440\u0443\u043a",
-                                                    "Thoroughfare": {
-                                                        "ThoroughfareName": "\u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "name": "\u0443\u043b\u0438\u0446\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u041a\u0432\u0435\u0441\u043c \u042d\u0448-\u0428\u043e\u0440\u0443\u043a, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041a\u0430\u0438\u0440, \u0415\u0433\u0438\u043f\u0435\u0442",
-                        "boundedBy": {
-                            "Envelope": {
-                                "lowerCorner": "31.627876 30.121345",
-                                "upperCorner": "31.628783 30.124484"
-                            }
-                        },
-                        "uri": "ymapsbm1://geo?data=CgozNTcwMTg5NDMzEkDZhdmQ2LXYsSwg2KfZhNmC2KfZh9ix2YcsINmC2LPZhSDYp9mE2LTYsdmI2YIsINi02KfYsdi5INmF2LPZgti3IgoN4Ab9QRW9-_BB",
-                        "Point": {
-                            "pos": "31.628361 30.122922"
-                        }
-                    }
-                },
-                {
-                    "GeoObject": {
-                        "metaDataProperty": {
-                            "GeocoderMetaData": {
-                                "precision": "street",
-                                "text": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u0411\u043b\u044d\u043a\u0445\u0435\u0442, \u0434\u043e\u0440\u043e\u0433\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                "kind": "street",
-                                "Address": {
-                                    "country_code": "ZA",
-                                    "formatted": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u0411\u043b\u044d\u043a\u0445\u0435\u0442, \u0434\u043e\u0440\u043e\u0433\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                    "Components": [
-                                        {
-                                            "kind": "country",
-                                            "name": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430"
-                                        },
-                                        {
-                                            "kind": "province",
-                                            "name": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f"
-                                        },
-                                        {
-                                            "kind": "locality",
-                                            "name": "\u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d"
-                                        },
-                                        {
-                                            "kind": "district",
-                                            "name": "\u0411\u043b\u044d\u043a\u0445\u0435\u0442"
-                                        },
-                                        {
-                                            "kind": "street",
-                                            "name": "\u0434\u043e\u0440\u043e\u0433\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                        }
-                                    ]
-                                },
-                                "AddressDetails": {
-                                    "Country": {
-                                        "AddressLine": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u0411\u043b\u044d\u043a\u0445\u0435\u0442, \u0434\u043e\u0440\u043e\u0433\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "ZA",
-                                        "CountryName": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
-                                        "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f",
-                                            "Locality": {
-                                                "LocalityName": "\u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d",
-                                                "DependentLocality": {
-                                                    "DependentLocalityName": "\u0411\u043b\u044d\u043a\u0445\u0435\u0442",
-                                                    "Thoroughfare": {
-                                                        "ThoroughfareName": "\u0434\u043e\u0440\u043e\u0433\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "name": "\u0434\u043e\u0440\u043e\u0433\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u0411\u043b\u044d\u043a\u0445\u0435\u0442, \u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
-                        "boundedBy": {
-                            "Envelope": {
-                                "lowerCorner": "18.697031 -33.956518",
-                                "upperCorner": "18.7034 -33.951637"
-                            }
-                        },
-                        "uri": "ymapsbm1://geo?data=CgozNDkxMTc4NDExElNSZXB1YmxpYyBvZiBTb3V0aCBBZnJpY2EsIFdlc3Rlcm4gQ2FwZSBQcm92aW5jZSwgQ2FwZSBUb3duLCBCbGFja2hlYXRoLCBNdXNjYXQgUm9hZCIKDeKblUEVW9IHwg,,",
-                        "Point": {
-                            "pos": "18.70111 -33.955425"
+                            "pos": "-157.803587 21.418602"
                         }
                     }
                 },
@@ -465,54 +176,47 @@
                         "metaDataProperty": {
                             "GeocoderMetaData": {
                                 "precision": "other",
-                                "text": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u0431\u0443\u0445\u0442\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
+                                "text": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e",
                                 "kind": "hydro",
                                 "Address": {
-                                    "country_code": "OM",
-                                    "formatted": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u0431\u0443\u0445\u0442\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
+                                    "country_code": "NG",
+                                    "formatted": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e",
                                     "Components": [
                                         {
                                             "kind": "country",
-                                            "name": "\u041e\u043c\u0430\u043d"
-                                        },
-                                        {
-                                            "kind": "province",
-                                            "name": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
+                                            "name": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f"
                                         },
                                         {
                                             "kind": "hydro",
-                                            "name": "\u0431\u0443\u0445\u0442\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
+                                            "name": "\u041a\u0430\u043d\u043e"
                                         }
                                     ]
                                 },
                                 "AddressDetails": {
                                     "Country": {
-                                        "AddressLine": "\u041e\u043c\u0430\u043d, \u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u0431\u0443\u0445\u0442\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "OM",
-                                        "CountryName": "\u041e\u043c\u0430\u043d",
-                                        "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                                            "Locality": {
-                                                "Premise": {
-                                                    "PremiseName": "\u0431\u0443\u0445\u0442\u0430 \u041c\u0430\u0441\u043a\u0430\u0442"
-                                                }
+                                        "AddressLine": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "NG",
+                                        "CountryName": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f",
+                                        "Locality": {
+                                            "Premise": {
+                                                "PremiseName": "\u041a\u0430\u043d\u043e"
                                             }
                                         }
                                     }
                                 }
                             }
                         },
-                        "name": "\u0431\u0443\u0445\u0442\u0430 \u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u043c\u0443\u0445\u0430\u0444\u0430\u0437\u0430 \u041c\u0430\u0441\u043a\u0430\u0442, \u041e\u043c\u0430\u043d",
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u041d\u0438\u0433\u0435\u0440\u0438\u044f",
                         "boundedBy": {
                             "Envelope": {
-                                "lowerCorner": "58.561865 23.620724",
-                                "upperCorner": "58.578475 23.630316"
+                                "lowerCorner": "8.329188 10.482379",
+                                "upperCorner": "8.92664 11.8492"
                             }
                         },
-                        "uri": "ymapsbm1://geo?data=Cgo1MjQzMzQ0MzA2EjjYudmF2KfZhiwg2YXYrdin2YHYuNipINmF2LPZgti3LCDQsdGD0YXRgtCwINCc0LDRgdC60LDRgiIKDY1HakIVdP-8QQ,,",
+                        "uri": "ymapsbm1://geo?data=CgoxNTU0MjU2NjI3Eg1OaWdlcmlhLCBLYW5vIgoNHAsKQRXFpjJB",
                         "Point": {
-                            "pos": "58.569869 23.62473"
+                            "pos": "8.627716 11.165718"
                         }
                     }
                 },
@@ -520,42 +224,50 @@
                     "GeoObject": {
                         "metaDataProperty": {
                             "GeocoderMetaData": {
-                                "precision": "street",
-                                "text": "\u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f, \u041e\u043a\u043b\u0435\u043d\u0434, \u041c\u0430\u0441\u043a\u0430\u0442 \u041f\u043b\u0435\u0439\u0441",
-                                "kind": "street",
+                                "precision": "other",
+                                "text": "\u0420\u043e\u0441\u0441\u0438\u044f, \u0412\u043e\u043b\u0433\u043e\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0421\u0442\u0430\u0440\u043e\u043f\u043e\u043b\u0442\u0430\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0441\u0435\u043b\u043e \u041a\u0430\u043d\u043e",
+                                "kind": "locality",
                                 "Address": {
-                                    "country_code": "NZ",
-                                    "formatted": "\u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f, \u041e\u043a\u043b\u0435\u043d\u0434, \u041c\u0430\u0441\u043a\u0430\u0442 \u041f\u043b\u0435\u0439\u0441",
+                                    "country_code": "RU",
+                                    "formatted": "\u0420\u043e\u0441\u0441\u0438\u044f, \u0412\u043e\u043b\u0433\u043e\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0421\u0442\u0430\u0440\u043e\u043f\u043e\u043b\u0442\u0430\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0441\u0435\u043b\u043e \u041a\u0430\u043d\u043e",
                                     "Components": [
                                         {
                                             "kind": "country",
-                                            "name": "\u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f"
+                                            "name": "\u0420\u043e\u0441\u0441\u0438\u044f"
                                         },
                                         {
                                             "kind": "province",
-                                            "name": "\u0440\u0435\u0433\u0438\u043e\u043d \u041e\u043a\u043b\u0435\u043d\u0434"
+                                            "name": "\u042e\u0436\u043d\u044b\u0439 \u0444\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043e\u043a\u0440\u0443\u0433"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u0412\u043e\u043b\u0433\u043e\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "\u0421\u0442\u0430\u0440\u043e\u043f\u043e\u043b\u0442\u0430\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "\u041a\u0430\u043d\u043e\u0432\u0441\u043a\u043e\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0435 \u043f\u043e\u0441\u0435\u043b\u0435\u043d\u0438\u0435"
                                         },
                                         {
                                             "kind": "locality",
-                                            "name": "\u041e\u043a\u043b\u0435\u043d\u0434"
-                                        },
-                                        {
-                                            "kind": "street",
-                                            "name": "\u041c\u0430\u0441\u043a\u0430\u0442 \u041f\u043b\u0435\u0439\u0441"
+                                            "name": "\u0441\u0435\u043b\u043e \u041a\u0430\u043d\u043e"
                                         }
                                     ]
                                 },
                                 "AddressDetails": {
                                     "Country": {
-                                        "AddressLine": "\u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f, \u041e\u043a\u043b\u0435\u043d\u0434, \u041c\u0430\u0441\u043a\u0430\u0442 \u041f\u043b\u0435\u0439\u0441",
-                                        "CountryNameCode": "NZ",
-                                        "CountryName": "\u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f",
+                                        "AddressLine": "\u0420\u043e\u0441\u0441\u0438\u044f, \u0412\u043e\u043b\u0433\u043e\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0421\u0442\u0430\u0440\u043e\u043f\u043e\u043b\u0442\u0430\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0441\u0435\u043b\u043e \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "\u0420\u043e\u0441\u0441\u0438\u044f",
                                         "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u0440\u0435\u0433\u0438\u043e\u043d \u041e\u043a\u043b\u0435\u043d\u0434",
-                                            "Locality": {
-                                                "LocalityName": "\u041e\u043a\u043b\u0435\u043d\u0434",
-                                                "Thoroughfare": {
-                                                    "ThoroughfareName": "\u041c\u0430\u0441\u043a\u0430\u0442 \u041f\u043b\u0435\u0439\u0441"
+                                            "AdministrativeAreaName": "\u0412\u043e\u043b\u0433\u043e\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+                                            "SubAdministrativeArea": {
+                                                "SubAdministrativeAreaName": "\u0421\u0442\u0430\u0440\u043e\u043f\u043e\u043b\u0442\u0430\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d",
+                                                "Locality": {
+                                                    "LocalityName": "\u0441\u0435\u043b\u043e \u041a\u0430\u043d\u043e"
                                                 }
                                             }
                                         }
@@ -563,17 +275,17 @@
                                 }
                             }
                         },
-                        "name": "\u041c\u0430\u0441\u043a\u0430\u0442 \u041f\u043b\u0435\u0439\u0441",
-                        "description": "\u041e\u043a\u043b\u0435\u043d\u0434, \u041d\u043e\u0432\u0430\u044f \u0417\u0435\u043b\u0430\u043d\u0434\u0438\u044f",
+                        "name": "\u0441\u0435\u043b\u043e \u041a\u0430\u043d\u043e",
+                        "description": "\u0421\u0442\u0430\u0440\u043e\u043f\u043e\u043b\u0442\u0430\u0432\u0441\u043a\u0438\u0439 \u0440\u0430\u0439\u043e\u043d, \u0412\u043e\u043b\u0433\u043e\u0433\u0440\u0430\u0434\u0441\u043a\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c, \u0420\u043e\u0441\u0441\u0438\u044f",
                         "boundedBy": {
                             "Envelope": {
-                                "lowerCorner": "174.613968 -36.885136",
-                                "upperCorner": "174.614184 -36.883996"
+                                "lowerCorner": "46.628142 50.431343",
+                                "upperCorner": "46.644428 50.440753"
                             }
                         },
-                        "uri": "ymapsbm1://geo?data=CgoyMDEzODEwMTQ1EiNOZXcgWmVhbGFuZCwgQXVja2xhbmQsIE11c2NhdCBQbGFjZSIKDTidLkMVyokTwg,,",
+                        "uri": "ymapsbm1://geo?data=Cgg1MzE2NDc0MhJ10KDQvtGB0YHQuNGPLCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KHRgtCw0YDQvtC_0L7Qu9GC0LDQstGB0LrQuNC5INGA0LDQudC-0L0sINGB0LXQu9C-INCa0LDQvdC-IgoNZYo6QhW2vklC",
                         "Point": {
-                            "pos": "174.614139 -36.884559"
+                            "pos": "46.635149 50.436243"
                         }
                     }
                 },
@@ -581,67 +293,255 @@
                     "GeoObject": {
                         "metaDataProperty": {
                             "GeocoderMetaData": {
-                                "precision": "street",
-                                "text": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0430\u043f\u0441\u0442\u0430\u0434, \u043f\u0443\u0442\u044c \u041c\u0430\u0441\u043a\u0430\u0442",
-                                "kind": "street",
+                                "precision": "other",
+                                "text": "\u041c\u0430\u043b\u0438, \u041a\u0430\u043d\u043e",
+                                "kind": "locality",
                                 "Address": {
-                                    "country_code": "ZA",
-                                    "formatted": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0430\u043f\u0441\u0442\u0430\u0434, \u043f\u0443\u0442\u044c \u041c\u0430\u0441\u043a\u0430\u0442",
+                                    "country_code": "ML",
+                                    "formatted": "\u041c\u0430\u043b\u0438, \u041a\u0430\u043d\u043e",
                                     "Components": [
                                         {
                                             "kind": "country",
-                                            "name": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430"
-                                        },
-                                        {
-                                            "kind": "province",
-                                            "name": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f"
+                                            "name": "\u041c\u0430\u043b\u0438"
                                         },
                                         {
                                             "kind": "locality",
-                                            "name": "\u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d"
-                                        },
-                                        {
-                                            "kind": "district",
-                                            "name": "\u041a\u0430\u043f\u0441\u0442\u0430\u0434"
-                                        },
-                                        {
-                                            "kind": "street",
-                                            "name": "\u043f\u0443\u0442\u044c \u041c\u0430\u0441\u043a\u0430\u0442"
+                                            "name": "\u041a\u0430\u043d\u043e"
                                         }
                                     ]
                                 },
                                 "AddressDetails": {
                                     "Country": {
-                                        "AddressLine": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u041a\u0430\u043f\u0441\u0442\u0430\u0434, \u043f\u0443\u0442\u044c \u041c\u0430\u0441\u043a\u0430\u0442",
-                                        "CountryNameCode": "ZA",
-                                        "CountryName": "\u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
+                                        "AddressLine": "\u041c\u0430\u043b\u0438, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "ML",
+                                        "CountryName": "\u041c\u0430\u043b\u0438",
+                                        "Locality": {
+                                            "LocalityName": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u041c\u0430\u043b\u0438",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "-2.472227 16.718802",
+                                "upperCorner": "-2.340426 16.845769"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoxOTQ0MTU5MDU4EgpNYWxpLCBLYW5vIgoNRwEawBUkQoZB",
+                        "Point": {
+                            "pos": "-2.406326 16.782296"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u041d\u0438\u0433\u0435\u0440, \u041a\u0430\u043d\u043e",
+                                "kind": "locality",
+                                "Address": {
+                                    "country_code": "NE",
+                                    "formatted": "\u041d\u0438\u0433\u0435\u0440, \u041a\u0430\u043d\u043e",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u041d\u0438\u0433\u0435\u0440"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u041d\u0438\u0433\u0435\u0440, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "NE",
+                                        "CountryName": "\u041d\u0438\u0433\u0435\u0440",
+                                        "Locality": {
+                                            "LocalityName": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u041d\u0438\u0433\u0435\u0440",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "8.453892 14.090473",
+                                "upperCorner": "8.585693 14.219082"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoxOTQ0MDU3NzQ1EgtOaWdlciwgS2FubyIKDRFRCEEVBHpiQQ,,",
+                        "Point": {
+                            "pos": "8.519793 14.154786"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u041a\u0430\u043c\u0435\u0440\u0443\u043d, \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0440\u0435\u0433\u0438\u043e\u043d, \u041a\u0430\u043d\u043e",
+                                "kind": "locality",
+                                "Address": {
+                                    "country_code": "CM",
+                                    "formatted": "\u041a\u0430\u043c\u0435\u0440\u0443\u043d, \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0440\u0435\u0433\u0438\u043e\u043d, \u041a\u0430\u043d\u043e",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u041a\u0430\u043c\u0435\u0440\u0443\u043d"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0440\u0435\u0433\u0438\u043e\u043d"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u041a\u0430\u043c\u0435\u0440\u0443\u043d, \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0440\u0435\u0433\u0438\u043e\u043d, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "CM",
+                                        "CountryName": "\u041a\u0430\u043c\u0435\u0440\u0443\u043d",
                                         "AdministrativeArea": {
-                                            "AdministrativeAreaName": "\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f",
+                                            "AdministrativeAreaName": "\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0440\u0435\u0433\u0438\u043e\u043d",
                                             "Locality": {
-                                                "LocalityName": "\u041a\u0435\u0439\u043f\u0442\u0430\u0443\u043d",
-                                                "DependentLocality": {
-                                                    "DependentLocalityName": "\u041a\u0430\u043f\u0441\u0442\u0430\u0434",
-                                                    "Thoroughfare": {
-                                                        "ThoroughfareName": "\u043f\u0443\u0442\u044c \u041c\u0430\u0441\u043a\u0430\u0442"
-                                                    }
-                                                }
+                                                "LocalityName": "\u041a\u0430\u043d\u043e"
                                             }
                                         }
                                     }
                                 }
                             }
                         },
-                        "name": "\u043f\u0443\u0442\u044c \u041c\u0430\u0441\u043a\u0430\u0442",
-                        "description": "\u041a\u0430\u043f\u0441\u0442\u0430\u0434, \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f \u0423\u044d\u0441\u0442\u0435\u0440\u043d-\u041a\u0435\u0439\u043f, \u042e\u0436\u043d\u043e-\u0410\u0444\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0440\u0435\u0433\u0438\u043e\u043d, \u041a\u0430\u043c\u0435\u0440\u0443\u043d",
                         "boundedBy": {
                             "Envelope": {
-                                "lowerCorner": "18.432756 -34.037438",
-                                "upperCorner": "18.433726 -34.037213"
+                                "lowerCorner": "13.493055 4.970857",
+                                "upperCorner": "13.496666 4.974155"
                             }
                         },
-                        "uri": "ymapsbm1://geo?data=CgozNDkxMTc4NDEzEkZSZXB1YmxpYyBvZiBTb3V0aCBBZnJpY2EsIFdlc3Rlcm4gQ2FwZSBQcm92aW5jZSwgQ2FwZSBUb3duLCBNdXNjYXQgV2F5IgoNVHeTQRUjJgjC",
+                        "uri": "ymapsbm1://geo?data=CgoxOTgzMTU0NTA3EhRDYW1lcm9vbiwgRWFzdCwgS2FubyIKDQrrV0EVgxyfQA,,",
                         "Point": {
-                            "pos": "18.433268 -34.037243"
+                            "pos": "13.494878 4.972227"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0430, \u041f\u0440\u043e\u0432\u0438\u043d\u0441\u0438\u044f \u0434\u0435 \u041a\u043e\u0440\u0434\u043e\u0431\u0430, \u041a\u0430\u043d\u043e",
+                                "kind": "locality",
+                                "Address": {
+                                    "country_code": "AR",
+                                    "formatted": "\u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0430, \u041f\u0440\u043e\u0432\u0438\u043d\u0441\u0438\u044f \u0434\u0435 \u041a\u043e\u0440\u0434\u043e\u0431\u0430, \u041a\u0430\u043d\u043e",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0430"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u041f\u0440\u043e\u0432\u0438\u043d\u0441\u0438\u044f \u0434\u0435 \u041a\u043e\u0440\u0434\u043e\u0431\u0430"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0430, \u041f\u0440\u043e\u0432\u0438\u043d\u0441\u0438\u044f \u0434\u0435 \u041a\u043e\u0440\u0434\u043e\u0431\u0430, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "AR",
+                                        "CountryName": "\u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0430",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "\u041f\u0440\u043e\u0432\u0438\u043d\u0441\u0438\u044f \u0434\u0435 \u041a\u043e\u0440\u0434\u043e\u0431\u0430",
+                                            "Locality": {
+                                                "LocalityName": "\u041a\u0430\u043d\u043e"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u041f\u0440\u043e\u0432\u0438\u043d\u0441\u0438\u044f \u0434\u0435 \u041a\u043e\u0440\u0434\u043e\u0431\u0430, \u0410\u0440\u0433\u0435\u043d\u0442\u0438\u043d\u0430",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "-64.661291 -32.675043",
+                                "upperCorner": "-64.52949 -32.5635"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoyMjQwMjkyNjMwEiZBcmdlbnRpbmEsIFByb3ZpbmNpYSBkZSBDw7NyZG9iYSwgQ2FubyIKDdcwgcIVJ3oCwg,,",
+                        "Point": {
+                            "pos": "-64.595391 -32.619289"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u0412\u0435\u043d\u0433\u0440\u0438\u044f, \u043c\u0435\u0434\u044c\u0435 \u0411\u043e\u0440\u0448\u043e\u0434-\u0410\u0431\u0430\u0443\u0439-\u0417\u0435\u043c\u043f\u043b\u0435\u043d, \u041a\u0430\u043d\u043e",
+                                "kind": "locality",
+                                "Address": {
+                                    "country_code": "HU",
+                                    "formatted": "\u0412\u0435\u043d\u0433\u0440\u0438\u044f, \u043c\u0435\u0434\u044c\u0435 \u0411\u043e\u0440\u0448\u043e\u0434-\u0410\u0431\u0430\u0443\u0439-\u0417\u0435\u043c\u043f\u043b\u0435\u043d, \u041a\u0430\u043d\u043e",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u0412\u0435\u043d\u0433\u0440\u0438\u044f"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u043c\u0435\u0434\u044c\u0435 \u0411\u043e\u0440\u0448\u043e\u0434-\u0410\u0431\u0430\u0443\u0439-\u0417\u0435\u043c\u043f\u043b\u0435\u043d"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "\u041a\u0430\u043d\u043e"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u0412\u0435\u043d\u0433\u0440\u0438\u044f, \u043c\u0435\u0434\u044c\u0435 \u0411\u043e\u0440\u0448\u043e\u0434-\u0410\u0431\u0430\u0443\u0439-\u0417\u0435\u043c\u043f\u043b\u0435\u043d, \u041a\u0430\u043d\u043e",
+                                        "CountryNameCode": "HU",
+                                        "CountryName": "\u0412\u0435\u043d\u0433\u0440\u0438\u044f",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "\u043c\u0435\u0434\u044c\u0435 \u0411\u043e\u0440\u0448\u043e\u0434-\u0410\u0431\u0430\u0443\u0439-\u0417\u0435\u043c\u043f\u043b\u0435\u043d",
+                                            "Locality": {
+                                                "LocalityName": "\u041a\u0430\u043d\u043e"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u041a\u0430\u043d\u043e",
+                        "description": "\u043c\u0435\u0434\u044c\u0435 \u0411\u043e\u0440\u0448\u043e\u0434-\u0410\u0431\u0430\u0443\u0439-\u0417\u0435\u043c\u043f\u043b\u0435\u043d, \u0412\u0435\u043d\u0433\u0440\u0438\u044f",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "20.528696 48.383121",
+                                "upperCorner": "20.660497 48.47084"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoyMDg5Njg2Mjk5EjdNYWd5YXJvcnN6w6FnLCBCb3Jzb2QtQWJhw7pqLVplbXBsw6luIHbDoXJtZWd5ZSwgS8OhbsOzIgoNvsGkQRU_tUFC",
+                        "Point": {
+                            "pos": "20.594597 48.426999"
                         }
                     }
                 }

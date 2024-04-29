@@ -186,6 +186,8 @@ async def show_sity(update, context):
         sity__photo[0],
         caption=f"Нашёл:{sity__photo[1]}"
     )
+    chat_id = update.effective_message.chat_id
+    remove_job_if_exists(str(chat_id), context)
     await work_with_bd(update, context, 1)
 
 
