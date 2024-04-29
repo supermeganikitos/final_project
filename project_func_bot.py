@@ -17,7 +17,22 @@ with open('sities.json') as f2:
     sities = json.load(f2)
 all_btn = [KeyboardButton(text=i) for i in sities] # 5 рандомных элеиентов
 flag = False
+corr_ans = None
 country = None
+
+
+async def corr_ans_func(update, context):
+    global corr_ans
+    if corr_ans == update.message.text:
+        flag = True
+        chat_id = update.message.chat_id
+        remove_job_if_exists(str(chat_id), context)
+        text='Вы выиграли'
+    else:
+        flag = False
+        text='Вы проиграли'
+    await update.message.reply_text(text)
+    await start(update, context)
 
 
 async def help_func(update, context):
@@ -71,15 +86,16 @@ async def sity_photo():
     # Можно воспользоваться готовой функцией,
     # которую предлагалось сделать на уроках, посвящённых HTTP-геокодеру.
 
-    static_api_request = f"http://static-maps.yandex.ru/1.x/?ll={ll}&spn={spn}&l=map"
+    static_api_request = f"http://static-maps.yandex.ru/1.x/?ll={ll}&spn={spn}&l=sat"
     return [static_api_request, sity]
 
 
 async def guess_the_sity(update, context):
-    global flag, country
+    global flag, country, corr_ans
     flag = False
     sity__photo = await sity_photo()
     print(sity__photo)
+    corr_ans = sity__photo[1]
     country = sity__photo[1].split()[1]
     a = [[i] for i in random_elem() + [get_sity(sity__photo[1])]]
     shuffle(a)
