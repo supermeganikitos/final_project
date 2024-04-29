@@ -124,8 +124,7 @@ async def help_command(update, context):
     await update.message.reply_text("Я пока не умею помогать... Я только ваше эхо.")
 
 
-async def echo(update, context):
-    await update.message.reply_text('Я получил сообщение ' + update.message.text)
+
 
 
 async def help(update, context):
