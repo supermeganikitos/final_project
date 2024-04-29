@@ -22,6 +22,11 @@ corr_ans = None
 country = None
 
 
+async def site(update, context):
+    await update.message.reply_text(
+        "Сайт: https://jumbled-cookie-soapwort.glitch.me/")
+
+
 async def work_with_bd(update, context, type):
     con = sqlite3.connect(r"""C:\Users\sstus\PycharmProjects\final_project\site_db\db\blogs.db""")
     cur = con.cursor()
@@ -202,7 +207,6 @@ async def task(update, context):
     await start(update, context)
 
 
-
 async def unset(update, context):
     """Удаляет задачу, если пользователь передумал"""
     chat_id = update.message.chat_id
@@ -213,7 +217,7 @@ async def unset(update, context):
 
 async def start(update, context):
     """Отправляет сообщение когда получена команда /start"""
-    reply_keyboard = [['/show_sity', '/guess_the_sity']]
+    reply_keyboard = [['/show_sity', '/guess_the_sity', '/site']]
     markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     user = update.effective_user
     await update.message.reply_text(
