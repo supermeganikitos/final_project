@@ -1,0 +1,186 @@
+{
+    "response": {
+        "GeoObjectCollection": {
+            "metaDataProperty": {
+                "GeocoderResponseMetaData": {
+                    "request": "\u041c\u043e\u0441\u043e\u0440\u043e",
+                    "results": "10",
+                    "found": "3"
+                }
+            },
+            "featureMember": [
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u041c\u043e\u0441\u043e\u0440\u043e",
+                                "kind": "locality",
+                                "Address": {
+                                    "country_code": "BR",
+                                    "formatted": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u041c\u043e\u0441\u043e\u0440\u043e",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "\u041c\u043e\u0441\u043e\u0440\u043e"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u041c\u043e\u0441\u043e\u0440\u043e",
+                                        "CountryNameCode": "BR",
+                                        "CountryName": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438",
+                                            "Locality": {
+                                                "LocalityName": "\u041c\u043e\u0441\u043e\u0440\u043e"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u041c\u043e\u0441\u043e\u0440\u043e",
+                        "description": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "-37.379393 -5.220193",
+                                "upperCorner": "-37.315792 -5.145387"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoyMjQwMDk3NzM3Ei9CcmFzaWwsIEVzdGFkbyBkbyBSaW8gR3JhbmRlIGRvIE5vcnRlLCBNb3Nzb3LDsyIKDSxdFcIV6PalwA,,",
+                        "Point": {
+                            "pos": "-37.34099 -5.186394"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u041c\u043e\u0441\u043e\u0440\u043e, \u041c\u043e\u0441\u043e\u0440\u043e",
+                                "kind": "railway_station",
+                                "Address": {
+                                    "country_code": "BR",
+                                    "formatted": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u041c\u043e\u0441\u043e\u0440\u043e, \u041c\u043e\u0441\u043e\u0440\u043e",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "\u041c\u043e\u0441\u043e\u0440\u043e"
+                                        },
+                                        {
+                                            "kind": "railway_station",
+                                            "name": "\u041c\u043e\u0441\u043e\u0440\u043e"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u041c\u043e\u0441\u043e\u0440\u043e, \u041c\u043e\u0441\u043e\u0440\u043e",
+                                        "CountryNameCode": "BR",
+                                        "CountryName": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438",
+                                            "Locality": {
+                                                "LocalityName": "\u041c\u043e\u0441\u043e\u0440\u043e",
+                                                "Premise": {
+                                                    "PremiseName": "\u041c\u043e\u0441\u043e\u0440\u043e"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u041c\u043e\u0441\u043e\u0440\u043e",
+                        "description": "\u041c\u043e\u0441\u043e\u0440\u043e, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "-37.348716 -5.196742",
+                                "upperCorner": "-37.332258 -5.180242"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoyMTk4MTQ2Njg1EjlCcmFzaWwsIEVzdGFkbyBkbyBSaW8gR3JhbmRlIGRvIE5vcnRlLCBNb3Nzb3LDsywgTW9zc29yw7MiCg2pXBXCFRwIpsA,",
+                        "Point": {
+                            "pos": "-37.340487 -5.188492"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u043c\u043e\u0441\u043e\u0440\u043e/\u0434\u0438\u0448\u0441\u0438\u043f\u0442 \u0420\u043e\u0437\u0430\u0434\u0443",
+                                "kind": "airport",
+                                "Address": {
+                                    "country_code": "BR",
+                                    "formatted": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u043c\u043e\u0441\u043e\u0440\u043e/\u0434\u0438\u0448\u0441\u0438\u043f\u0442 \u0420\u043e\u0437\u0430\u0434\u0443",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438"
+                                        },
+                                        {
+                                            "kind": "airport",
+                                            "name": "\u043c\u043e\u0441\u043e\u0440\u043e/\u0434\u0438\u0448\u0441\u0438\u043f\u0442 \u0420\u043e\u0437\u0430\u0434\u0443"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f, \u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u043c\u043e\u0441\u043e\u0440\u043e/\u0434\u0438\u0448\u0441\u0438\u043f\u0442 \u0420\u043e\u0437\u0430\u0434\u0443",
+                                        "CountryNameCode": "BR",
+                                        "CountryName": "\u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438",
+                                            "Locality": {
+                                                "DependentLocality": {
+                                                    "DependentLocalityName": "\u043c\u043e\u0441\u043e\u0440\u043e/\u0434\u0438\u0448\u0441\u0438\u043f\u0442 \u0420\u043e\u0437\u0430\u0434\u0443"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "\u043c\u043e\u0441\u043e\u0440\u043e/\u0434\u0438\u0448\u0441\u0438\u043f\u0442 \u0420\u043e\u0437\u0430\u0434\u0443",
+                        "description": "\u0420\u0438\u0443-\u0413\u0440\u0430\u043d\u0434\u0438-\u0434\u0443-\u041d\u043e\u0440\u0442\u0438, \u0411\u0440\u0430\u0437\u0438\u043b\u0438\u044f",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "-37.368658 -5.210818",
+                                "upperCorner": "-37.359334 -5.19232"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoyMTk2NDUzMzMwEj5CcmFzaWwsIEVzdGFkbyBkbyBSaW8gR3JhbmRlIGRvIE5vcnRlLCBNb3Nzb3LDsy9EaXhzZXB0IFJvc2FkbyIKDaV0FcIVR3KmwA,,",
+                        "Point": {
+                            "pos": "-37.363906 -5.201452"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

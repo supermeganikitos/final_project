@@ -1,5 +1,3 @@
-
-
 from telegram.ext import Application, MessageHandler, filters
 from telegram.ext import CommandHandler
 from yandex_func_bot import *
@@ -12,10 +10,9 @@ def main():
         application.add_handler(CommandHandler("i", show_sity))
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("show_sity", show_sity))
-    application.add_handler(CommandHandler("help", show_sity))
+    application.add_handler(CommandHandler("help", help_func))
     application.add_handler(CommandHandler("guess_the_sity", guess_the_sity))
-    text_handler = MessageHandler(filters.TEXT, echo)
-    application.add_handler(text_handler)
+    application.add_handler(CommandHandler("nazad", unset_nazad))
     application.run_polling()
 
 

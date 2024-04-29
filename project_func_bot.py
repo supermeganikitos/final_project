@@ -20,6 +20,13 @@ flag = False
 country = None
 
 
+async def help_func(update, context):
+    global country
+    await update.message.reply_text(
+        country,
+    )
+
+
 def random_elem():
     a = sample(all_btn, 5)
     return a
@@ -55,7 +62,6 @@ async def sity_photo():
         "lang": 'ru_RU',
         "geocode": sity.split()[0]
     })
-    response = response.json()
     with open('res.json', 'w') as f:
         json.dump(response, f, indent=4)
     toponym = response["response"]["GeoObjectCollection"][
@@ -66,34 +72,36 @@ async def sity_photo():
     # которую предлагалось сделать на уроках, посвящённых HTTP-геокодеру.
 
     static_api_request = f"http://static-maps.yandex.ru/1.x/?ll={ll}&spn={spn}&l=map"
-    return static_api_request, sity
+    return [static_api_request, sity]
 
 
 async def guess_the_sity(update, context):
     global flag, country
     flag = False
-    sity__photo = sity_photo()
-    country = sity__photo[1][1]
+    sity__photo = await sity_photo()
+    print(sity__photo)
+    country = sity__photo[1].split()[1]
     a = [[i] for i in random_elem() + [get_sity(sity__photo[1])]]
     shuffle(a)
-    reply_keyboard = [a, ['/help'], ['/i_dont_know'], ['/nazad']]
+    reply_keyboard = [*a, ['/help'], ['/nazad']]
     markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     await context.bot.send_photo(
         update.message.chat_id,  # Идентификатор чата. Куда посылать картинку.
         # Ссылка на static API, по сути, ссылка на картинку.
         # Телеграму можно передать прямо её, не скачивая предварительно карту.
         sity__photo[0],
-        caption=f'у вас есть 1 минуты чтобы угадать город'
+        caption=f'у вас есть 1 минута чтобы угадать город',
     )
+    await context.bot.send_message(update.message.chat_id, text='.', reply_markup=markup)
 
-    await set_timer()
+    await set_timer(update, context)
     ans = str(update.message.text).lower()
     if ans == sity__photo[1].lower():
         flag = True
 
 
 async def show_sity(update, context):
-    sity__photo = sity_photo()
+    sity__photo = await sity_photo()
     await context.bot.send_photo(
         update.message.chat_id,  # Идентификатор чата. Куда посылать картинку.
         # Ссылка на static API, по сути, ссылка на картинку.
@@ -110,16 +118,7 @@ async def get_response(url, params):
             return await resp.json()
 
 
-async def timer_lobby(update, context):
-    reply_keyboard = [['/timer_30s'], ['/timer_1m'], ['/timer_5m'], ['/nazad']]
-    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
-    await update.message.reply_text(
-        "Какой таймер вам нужен?",
-        reply_markup=markup
-    )
-
-
-async def task(context):
+async def task(update, context):
     global t_i_m_e_r
     """Выводит сообщение"""
     if flag:
@@ -127,14 +126,32 @@ async def task(context):
     else:
         text = 'Вы  не угадали'
     await context.bot.send_message(context.job.chat_id, text=text)
+    await start(update, context)
+
 
 
 async def unset(update, context):
     """Удаляет задачу, если пользователь передумал"""
     chat_id = update.message.chat_id
     job_removed = remove_job_if_exists(str(chat_id), context)
-    text = 'Таймер отменен!' if job_removed else 'У вас нет активных таймеров'
+    text = 'Вопрос отменен вы проиграли!' if job_removed else 'У вас нет активных вопросов'
     await update.message.reply_text(text)
+
+
+async def start(update, context):
+    """Отправляет сообщение когда получена команда /start"""
+    reply_keyboard = [['/show_sity', '/guess_the_sity']]
+    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
+    user = update.effective_user
+    await update.message.reply_text(
+        "Я бот. Какая информация вам нужна?",
+        reply_markup=markup
+    )
+
+
+async def unset_nazad(update, context):
+    await unset(update, context)
+    await start(update, context)
 
 
 def remove_job_if_exists(name, context):
@@ -166,12 +183,3 @@ async def set_timer(update, context):
                                data=t_i_m_e_r)
 
 
-async def start(update, context):
-    """Отправляет сообщение когда получена команда /start"""
-    reply_keyboard = [['/show_sity', '/guess_the_city']]
-    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
-    user = update.effective_user
-    await update.message.reply_text(
-        "Я бот. Какая информация вам нужна?",
-        reply_markup=markup
-    )
