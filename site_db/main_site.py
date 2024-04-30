@@ -33,18 +33,12 @@ def return_carousel():
                             (f"{url_for('static', filename='img/2.png')}", "second"),
                             (f"{url_for('static', filename='img/3.png')}", "third")
                             ]
-    if request.method == 'POST':
-        f = request.files['file']
-        settings["avatar_file"] = f.filename
-        f.save(f'static/img/{f.filename}')
-        settings['pics'].append((f"{url_for('static', filename=f'img/{f.filename}')}", "first"))
     return render_template('test_carousel.html', title1='Карусель',
                            title2=f'Добро пожаловать, {user_name}!', title='Геобот', pics=settings['pics'])
 
 @app.route("/")
 def index():
     db_sess = db_session.create_session()
-
     users = db_sess.query(User)
     return render_template("index.html", title1='Информация',
                            title2=f'Добро пожаловать, {user_name}!', title='Геобот', news=users)
