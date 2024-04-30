@@ -91,7 +91,7 @@ async def corr_ans_func(update, context):
         await work_with_bd(update, context, 2)
     else:
         flag = False
-        text = 'Вы проиграли'
+        text = f'Вы проиграли, правильным ответом было {corr_ans}'
     await update.message.reply_text(text)
     await start(update, context)
 
@@ -223,7 +223,7 @@ async def start(update, context):
     markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     user = update.effective_user
     await update.message.reply_text(
-        "Я бот. Какая информация вам нужна?",
+        "Я геобот. Какая информация вам нужна?",
         reply_markup=markup
     )
 
