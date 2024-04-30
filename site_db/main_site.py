@@ -8,12 +8,11 @@ from flask import make_response
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 a = 0
-settings = {"user_name": input()}
+settings = {"user_name": 'Пользователь'}
 if len(settings["user_name"]) != 0:
     user_name = settings["user_name"]
 else:
     user_name = 'Пользователь'
-
 
 
 @app.errorhandler(404)
@@ -36,12 +35,14 @@ def return_carousel():
     return render_template('test_carousel.html', title1='Карусель',
                            title2=f'Добро пожаловать, {user_name}!', title='Геобот', pics=settings['pics'])
 
+
 @app.route("/")
 def index():
     db_sess = db_session.create_session()
     users = db_sess.query(User)
     return render_template("index.html", title1='Информация',
                            title2=f'Добро пожаловать, {user_name}!', title='Геобот', news=users)
+
 
 def main():
     db_session.global_init("db/blogs.db")
