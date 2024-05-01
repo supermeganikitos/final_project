@@ -13,11 +13,11 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG
 )
 logger = logging.getLogger(__name__)
-t_i_m_e_r = 60  # таймер на 5 секунд
+t_i_m_e_r = 60  # таймер на 60 секунд
 with open('sities.json') as f2:
     sities = json.load(f2)
 all_btn = [KeyboardButton(text=i) for i in sities] # 5 рандомных элеиентов
-flag = False
+flag = None
 corr_ans = None
 country = None
 
@@ -153,7 +153,7 @@ async def sity_photo():
 
 async def guess_the_sity(update, context):
     global flag, country, corr_ans
-    flag = False
+    flag = None
     sity__photo = await sity_photo()
     print(sity__photo)
     corr_ans = sity__photo[1]
@@ -198,15 +198,16 @@ async def get_response(url, params):
             return await resp.json()
 
 
-async def task(update, context):
-    global t_i_m_e_r
+async def task(context):
     """Выводит сообщение"""
+    global flag
     if flag:
         text = 'Вы угадали'
     else:
-        text = 'Вы  не угадали'
+        flag = False
+        text = f'Вы  не угадали, правильный ответ был: {corr_ans}'
     await context.bot.send_message(context.job.chat_id, text=text)
-    await start(update, context)
+
 
 
 async def unset(update, context):
@@ -260,5 +261,3 @@ async def set_timer(update, context):
                                chat_id=chat_id,
                                name=str(chat_id),
                                data=t_i_m_e_r)
-
-
